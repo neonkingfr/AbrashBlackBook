@@ -77,7 +77,7 @@ use
 
 and you should be all set.
 
-> ![](images/i.jpg)
+> ![](../images/i.jpg)
 > There’s an important point to all this beyond simply getting read-modify-write
 > operations to work in C. Many people believe that it’s possible to write low-level
 > graphics code in C that’s as efficient as code written in assembly language, and
@@ -143,9 +143,9 @@ one of 16 colors from within the currently selected page. (Remember that the pal
 RAM is set to a pass-through state, so pixel values of 0 through 15 come through
 the palette RAM to the DAC unaltered.) Basically, the Color Select register gives you
 
-![**Figure A.1**  *Color selection with 16-pages-of-16-colors paging.*](images/a-01.jpg)
+![**Figure A.1**  *Color selection with 16-pages-of-16-colors paging.*](../images/a-01.jpg)
 
-![**Figure A.2**  *16-pages-of-16-colors paging.*](images/a-02.jpg)
+![**Figure A.2**  *16-pages-of-16-colors paging.*](../images/a-02.jpg)
 
 instantaneous access to any one of 16 completely independent pages of 16 colors
 each. (By the way, color paging isn’t available in 256-color mode. The reason should
@@ -215,7 +215,7 @@ AC Data register at 3C0H.
 
 Repeat this process whenever you want to switch to another color page.
 
-> ![](images/i.jpg)
+> ![](../images/i.jpg)
 Although it’s not required, you’ll generally want to wait for the leading edge of the
 vertical sync pulse before switching pages, as this provides the smoothest color
 transition, as described above. Take the vertical sync wait out of Listing A.1 (which
